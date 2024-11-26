@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <style>
+        .container{
+            background-color: white;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color:burlywood;
+            color:red;
+        }
+
+        li{
+            display: inline-block;
+        }
+        .row1{
+            display:flex;
+            text-align: center;
+        }
+        .box{
+            padding:5px;
+            margin:20px;
+            width:300px;
+            background-color: grey;
+        }
+        .hover{
+            cursor:pointer;
+        }
+        .row2{
+            display:flex;
+            background-color: antiquewhite;
+            padding:10px;
+        }
+        .para{
+            margin:25px;
+            text-align:center;
+            color:brown;
+            font-size: 25px;
+        }
+        .row3{
+            display:flex;
+            background-color:bisque;
+            color:blue;
+        }
+        .button{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div><h1>Online Store</h1></div>
+            <div>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row1">
+            <div class="box">
+                    <img src="assets\images\1.png" width="250px">
+                    <h2>Rs 250</h2>
+                    <button class="button">add to cart</button>
+            </div>
+            <div class="box">
+                    <img src="assets\images\2.png" width="250px">
+                    <h2>Rs 150</h2>
+                    <button class="button">add to cart</button>
+            </div>
+            <div class="box">
+                    <img src="assets\images\3.png" width="250px">
+                    <h2>Rs 200</h2>
+                    <button class="button">add to cart</button>
+            </div>
+        </div>
+        <br>
+        <div class="row2">
+            <div> <img src="assets\images\4.png" width="250px"></div>
+            <div class="para">
+                <p>THis a colourful mug.It costs 399/- only.
+                Home Delivery available.
+                </p>
+                <button class="button">click here</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row3">
+            <div class="para">
+                <p>
+                    It is India Estates Blend.It costs 599/- only.
+                    Home delivery available.
+                </p>
+                <button class="button">clicK here</button>    
+            </div>
+            <div>
+                <img src="assets\images\5.png" width="250px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
