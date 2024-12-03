@@ -3,25 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first website</title>
+    <title>My Portfolio</title>
+    <style>
+        .container1{
+            display:flex;
+            margin:10px;
+            justify-content: center;
+            justify-content: space-around;
+            background-color: beige;
+        }
+        .info{
+            display:flex;
+            justify-content: space-between;
+            margin-top:15px;
+        }
+        .About{
+            display:flex;
+            justify-content: space-between;
+            background-color: aquamarine;
+            margin: 10px;
+        }
+        .box{
+            width:400px;
+            height: 250px;
+        }
+        .Skills{
+            display:flex;
+            background-color: green;
+            margin:10px;
+        }
+        .box1{
+            width:200px;
+            height:300px;
+            margin:1px;
+        }
+        h2{
+            margin: 10px;
+            
+        }
+        .Services{
+            display:flex;
+            padding:10px;
+        }
+        .box2{
+            margin:10px;
+            width:250px;
+            height:200px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to my website</h1>
-    <hr>
-    <h2>Click on the buttons to reach desired site</h2>
-    <a href="https://www.youtube.com"  target="_blank" title="opens youtube" >
-          1.YOUTUBE
-    </a>
-    <br>
-    <a href="https://www.crazygames.com" target="_blank" title="opens games">
-           2.GAMES
-    </a>
-    <br>
-    <a href="https://www.instagarm.com" target="_blank"  title="opens instagram">
-           3.Instagram
-    </a>
-    <br>
-    <img src="Bharathkumar918.github.io/screenshot.png" alt="website code" width="200" 
+    <div class="main">
+        <div class="container1">
+            <div name="head">
+                <h1>Alleni Bharath Kumar</h1>
+            </div>
+            <div class="info">
+                <p>
+                    <a href="#">About</a> 
+                    <a href="#">Skills</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contacts</a>
+                </p>
+            </div>
+        </div>
+        <h2>About</h2>
+        <div class="About">
+            <div class="box">
+                <h2>Full stack Devolper</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores quo explicabo quaerat consectetur expedita nam quidem, ab quia aut et perspiciatis soluta, eveniet eligendi fuga nostrum amet mollitia veniam.
+                </p>
+            </div>
+            <div class="box">
+                <image src="fullstack.png" width="376px" height="250px"></image>
+            </div>
+        </div>
+        <hr>
+        <h2>My Skills</h2>
+        <div class="Skills">
+            <!-- <h2>My Skills</h2> -->
+            <div class="box1">
+                <image src="java.png" width="175px" height="100px"></image>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa ipsam aliquam distinctio quidem! Inventore officia quo voluptatem atque, nam aut blanditiis ullam. Itaque, dicta suscipit debitis rerum praesentium libero.</p>
+            </div>
+            <div class="box1">
+                <image src="python.png" width="175px" height="100px"></image>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa ipsam aliquam distinctio quidem! Inventore officia quo voluptatem atque, nam aut blanditiis ullam. Itaque, dicta suscipit debitis rerum praesentium libero.</p>
+            </div>
+            <div class="box1">
+                <image src="c.png" width="175px" height="100px"></image>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa ipsam aliquam distinctio quidem! Inventore officia quo voluptatem atque, nam aut blanditiis ullam. Itaque, dicta suscipit debitis rerum praesentium libero.</p>
+            </div>
+            <div class="box1">
+                <image src="c++.png" width="175px" height="100px"></image>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa ipsam aliquam distinctio quidem! Inventore officia quo voluptatem atque, nam aut blanditiis ullam. Itaque, dicta suscipit debitis rerum praesentium libero.</p>
+            </div>
+
+        </div>
+        <hr>
+        <h2>Services</h2>
+        <div class="Services">
+            <div class="box2">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, molestiae officia eveniet exercitationem impedit corrupti harum quam, labore adipisci ipsa blanditiis, voluptas tempore nostrum tempora? Magni eum doloribus debitis molestias?</p>
+            </div>
+            <div class="box2">
+                <h3>Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ratione voluptates quidem maiores ex nulla sapiente nostrum molestias, optio nihil! Facilis similique numquam eveniet natus, libero esse quisquam maiores architecto!</p>
+            </div>
+            <div class="box2">
+                <h3>Backend Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maxime molestias nesciunt enim veniam id eveniet animi sequi. Fugiat doloremque possimus quaerat inventore laborum praesentium quam atque debitis veniam magni.</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
