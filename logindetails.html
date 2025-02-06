@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login details</title>
+    <style>
+        .container1{
+            margin-top:50px;
+            margin-left:50px;
+            display:scroll;
+        }
+    </style>
+    <script>
+        function showData(){
+            let name=document.getElementById("name").value
+            let email=document.getElementById("email").value
+            let password=document.getElementById("password").value
+            let dob=document.getElementById("date").value
+            data.innerHTML=`${name},${email},${password},${dob}`
+        }
+    </script>
+</head>
+<body>
+    <div class="container1">
+        <p>
+            <input id="name" type="text" placeholder="Name" required> 
+        </p>
+        <p>
+            <input id="email" type="email" placeholder="email" required> 
+        </p>
+        <p>
+            <input id="password" type="password" placeholder="password" required> 
+        </p>
+        <p>
+            <input id="date" type="date" placeholder="Date of birth" required> 
+        </p>
+        <p>
+            <button onClick="showData()">submit</button>
+        </p>
+        <div id="data"></div>
+    </div>
+</body>
+</html>
