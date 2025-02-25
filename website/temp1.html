@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .box{
+            border:solid;
+            width:300px;
+            height:300px;
+            margin-right:200px;
+            margin-top:80px;
+        }
+        div{
+            margin-left:20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let products = [
+        {
+          id: 1,
+          name: "product 1",
+          img: "cupcake.png",
+          price: 25,
+          docs: "this product is avaliable",
+          url: "www.google.com",
+        },
+        {
+          id: 2,
+          name: "product 2",
+          img: "Cake.png",
+          price: 25,
+          docs: "this product is avaliable",
+          url: "www.instagram.com",
+        },
+        {
+          id: 3,
+          name: "product 3",
+          img: "Bread.png",
+          price: 25,
+          docs: "this product is avaliable",
+          url: "www.microsoftedge.com",
+        },
+      ];
+      let length = products.length;
+      let str = "";
+      for (let i = 0; i < length; i++) {
+        str += `<div class="container"><div class="box"><div><p>${products[i].name}</p></div><div><img src="${products[i].img}" width="100px" height="100px"></div><div><h1>${products[i].price}<h1></div><div><p>${products[i].docs}</p></div> <div><a href="${products[i].url}">Buyproduct</a> </div> </div> </div>`;
+      }
+      root.innerHTML = str;
+    </script>
+  </body>
+</html>
