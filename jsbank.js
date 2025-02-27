@@ -58,6 +58,7 @@ function saveData() {
 }
 function home() {
   let str = `
+    <div class="w-100 bg-info m-3 p-3 rounded text-center">
       <h3>Welcome ${user.name}</h3>
       <button onclick='showLogin()'>Logout</button>
       <p><select id="type" onchange='showUser()'>
@@ -68,9 +69,9 @@ function home() {
          </select></p>
          <p><select style="display:none" id="selUser"></select></p>
          <p><input type="number" id="amount" placeholder="Enter Amount"></p>
-         <button onclick='saveData()'>Submit</button>
+         <button onclick='saveData()' class="btn btn-dark">Submit</button>
          <p><b>Current Balance: <span id='spBalance'>${user.balance}</span></b></p>
-
+    </div>
       `;
   root.innerHTML = str;
 }
@@ -107,25 +108,28 @@ function chkUser() {
 }
 function showForm() {
   let str = `
-  <h2>Registration Form</h2>
-  <p><input type="text" id="name" class="form-control" placeholder="Name"></p>
-  <p><input type="text" id="email" class="form-control" placeholder="Email"></p>
-  <p><input type="password" id="password" class="form-control" placeholder="Password"></p>
-  <p><input type="date" id="dob"></p>
-  <p><button onclick='addUser()'>Submit</button></p>
-  <p>Already a member?<button onclick='showLogin()'>Login Here</button></p>
-  `;
+    <div class="w-100 bg-info m-3 p-3 rounded text-center">
+        <h2>Registration Form</h2>
+        <p><input type="text" id="name" class="form-control" placeholder="Name"></p>
+        <p><input type="text" id="email" class="form-control" placeholder="Email"></p>
+        <p><input type="password" id="password" class="form-control" placeholder="Password"></p>
+        <p><input type="date" id="dob" style="background-color:gray"></p>
+        <p><button onclick='addUser()' style="background-color:green" class="btn btn-green">Submit</button></p>
+        <p>Already a member?<button onclick='showLogin()' style="background-color:wheat" class="btn btn-wheat">Login Here</button></p>
+    </div>
+    `;
   root.innerHTML = str;
 }
 function showLogin() {
   let str = `
-  <div>
+  <div class="w-100 bg-info m-3 p-3 rounded text-center">
       <h2>Login Form</h2>
       <div id='msg'></div>
-      <p><input id="email" type="text"></p>
-      <p><input id="password" type="password"></p>
-      <button onclick='chkUser()'>Log In</button>
-      <p><button onclick='showForm()'>Create Account</button></p>
+      <p><input id="email" type="text" placeholder="Email"></p>
+      <p><input id="password" type="password" placeholder="Password"></p>
+      <button onclick='chkUser()' class="btn btn-light">Log In</button>
+      <b
+      <p><button onclick='showForm()' class="btn btn-dark">Create Account</button></p>
   </div>
   `;
   root.innerHTML = str;
